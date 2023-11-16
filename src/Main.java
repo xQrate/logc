@@ -2,22 +2,62 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("№3. Условные выражения");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число: ");
 
-        int number = scanner.nextInt();
 
-        System.out.println("число: " + number);
-        if (number<=-51 && number>=-137)
-        {
-            System.out.println("Интервал от -137 до -51");
+        System.out.print("Введите число A: ");
+        int A = scanner.nextInt();
+
+        System.out.print("Введите число B: ");
+        int B = scanner.nextInt();
+
+        System.out.print("Введите число C: ");
+        int C = scanner.nextInt();
+
+        // Проверяем и выводим информацию о числе A.
+        System.out.println("\nОтвет о A: " + A);
+        if (A % 2 == 0) {
+            System.out.println("A - Четное число");
+        } else {
+            System.out.println("A - Нечетное число");
         }
-        else if (number>=55 && number<=123)
-        {
-            System.out.println("Интервал от 123 до 55");
+        if (A % 3 == 0) {
+            System.out.println("A - Делится на три");
+        } else {
+            System.out.println("A - Не делится на три");
         }
-        else{System.out.println("Не принадлежит ни одному интервалу");}
+        System.out.println();
+
+        // Проверяем и выводим информацию о числе B.
+        System.out.println("Ответ о B: " + B);
+        if (B % 2 == 0) {
+            System.out.println("B - Четное число");
+        } else {
+            System.out.println("B - Нечетное число");
+        }
+        if (B % 3 == 0) {
+            System.out.println("B - Делится на три");
+        } else {
+            System.out.println("B - Не делится на три");
+        }
+        System.out.println();
+
+        // Проверяем и выводим информацию о числе C.
+        System.out.println("Ответ о C: " + C);
+        if (C % 2 == 0) {
+            System.out.println("C - Четное число");
+        } else {
+            System.out.println("C - Нечетное число");
+        }
+        if (C % 3 == 0) {
+            System.out.println("C - Делится на три");
+        } else {
+            System.out.println("C - Не делится на три");
+        }
+
+        scanner.close();
     }
-
 }
+
+
+
